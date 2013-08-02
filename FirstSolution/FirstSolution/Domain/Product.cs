@@ -7,37 +7,12 @@ namespace FirstSolution.Domain
 {
     public class Product
     {
-        public String Category
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public Guid Id { get; set; }
 
-        public Boolean Discontinued
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public string Category { get; set; }
 
-        public string Name
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public bool Discontinued { get; set; }
+
+        public string Name { get; set; }
     }
 }
