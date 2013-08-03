@@ -115,5 +115,23 @@ namespace FirstSolution.Tests
             Assert.AreEqual(_products[1].Name, fromDb.Name);
 
         }
+        [Test]
+        public void Can_get_existing_products_by_category()
+        {
+            IProductRepository repository = new ProductRepository();
+            var fromDb = repository.GetByCategory("Fruits");
+
+            Assert.AreEqual(2, fromDb.Count);
+            Assert.IsTrue(IsInCollection(_products[0], fromDb));
+            Assert.IsTrue(IsInCollection(_products[1], fromDb));
+        }
+
+        private bool IsInCollection(Product product, ICollection<Product> fromDb)
+        {
+            foreach (var item in fromDb)
+                if (product.Id == item.Id)
+                    return true;
+            return false;
+        }
     }
 }

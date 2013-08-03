@@ -62,7 +62,10 @@ namespace FirstSolution.Repositories
 
         public ICollection<Product> GetByCategory(string category)
         {
-            throw new NotImplementedException();
+            using (ISession session = NHibernateHelper.OpenSession())
+            {
+                return session.CreateCriteria(typeof(Product)).Add(Restrictions.Eq("Category", category)).List<Product>();
+            }
         }
     }
 }
