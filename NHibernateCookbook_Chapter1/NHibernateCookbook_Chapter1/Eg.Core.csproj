@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs" />
+    <Compile Include="ActorRole.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="Product.cs" />
@@ -61,6 +62,7 @@
     </Content>
     <EmbeddedResource Include="Mappings\Book.hbm.xml" />
     <EmbeddedResource Include="Mappings\Movie.hbm.xml" />
+    <EmbeddedResource Include="Mappings\ActorRole.hbm.xml" />
     <Content Include="NHibernateCookbook.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
