@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eg.Core" namespace="Eg.Core">
-	<subclass name="Book" extends="Product">
+	<joined-subclass name="Book" extends="Product">
+		<key column="Id"></key>
 		<property name ="Author"></property>
 		<property name="ISBN"></property>
-	</subclass>
+	</joined-subclass>
 </hibernate-mapping>
