@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DF0833B5-A913-4E8D-9F0A-ACAA56249F59}</ProjectGuid>
+    <ProjectGuid>{670A3299-5E05-403F-934B-B50495A5D5B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Eg.Core</RootNamespace>
-    <AssemblyName>Eg.Core</AssemblyName>
+    <RootNamespace>Eg.Tests</RootNamespace>
+    <AssemblyName>Eg.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\NHibernateCookbook_Chapter1\Lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\NHibernateCookbook_Chapter1\Lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -43,34 +52,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="GenerateSchemaFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Lib\Iesi.Collections.dll" />
-    <Content Include="Lib\Iesi.Collections.pdb" />
-    <Content Include="Lib\Iesi.Collections.xml" />
-    <Content Include="Lib\NHibernate.dll" />
-    <Content Include="Lib\NHibernate.pdb" />
-    <Content Include="Lib\NHibernate.xml" />
-    <Content Include="hibernate.cfg.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="NHibernateCookbook.sdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <EmbeddedResource Include="Mappings\Product.hbm.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Schema\nhibernate-configuration.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Schema\nhibernate-mapping.xsd">
-      <SubType>Designer</SubType>
-    </None>
+    <ProjectReference Include="..\NHibernateCookbook_Chapter1\Eg.Core.csproj">
+      <Project>{df0833b5-a913-4e8d-9f0a-acaa56249f59}</Project>
+      <Name>Eg.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
