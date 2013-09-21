@@ -16,6 +16,8 @@ namespace Eg.Tests
 			_cfg = new Configuration();
 			_cfg.Configure();
 			_cfg.AddAssembly(typeof(Product).Assembly);
+			//_cfg.AddAssembly(typeof(Book).Assembly);
+			//_cfg.AddAssembly(typeof(Movie).Assembly);
 		}
 		[Test]
 		public void Can_generate_schema()

@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="Movie.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -57,6 +59,8 @@
     <Content Include="hibernate.cfg.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Mappings\Book.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Movie.hbm.xml" />
     <Content Include="NHibernateCookbook.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

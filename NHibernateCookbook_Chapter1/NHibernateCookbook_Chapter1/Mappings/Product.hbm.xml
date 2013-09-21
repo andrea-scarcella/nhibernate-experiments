@@ -6,6 +6,11 @@
 		<id name="Id">
 			<generator class="guid.comb" />
 		</id>
+		<discriminator column="ProductType"></discriminator>
+		<natural-id mutable="true">
+			<property name="Name" not-null="true"></property>
+
+		</natural-id>
 		<property name="Name" not-null="true" />
 		<property name="Description" />
 		<property name="UnitPrice" not-null="true"
