@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Eg.Core" assembly="Eg.core">
-	<union-subclass name="Movie" extends="Product">
+	<subclass name="Movie" extends="Product">
 		<property name="Director"></property>
-	</union-subclass>
+	</subclass>
 </hibernate-mapping>
