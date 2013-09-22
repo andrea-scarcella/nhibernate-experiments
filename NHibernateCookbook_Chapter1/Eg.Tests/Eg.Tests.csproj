@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenerateComponentExamplesSchemaFixture.cs" />
     <Compile Include="GenerateFluentNHSchemaFixture.cs" />
     <Compile Include="GenerateManualRelationshipsSchemaFixture.cs" />
     <Compile Include="GenerateMappingEnumsSchemaFixture.cs" />
@@ -69,6 +70,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComponentExamples\ComponentExamples.csproj">
+      <Project>{bce1ce25-e040-46bb-b3cd-050aa7b5ee65}</Project>
+      <Name>ComponentExamples</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Eg.FluentMappings\Eg.FluentMappings.csproj">
       <Project>{aae31787-1eb1-4f3c-b872-7a3e69e44110}</Project>
       <Name>Eg.FluentMappings</Name>
