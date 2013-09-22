@@ -6,7 +6,7 @@ namespace Eg.Core
 	{
 
 		public virtual TId Id { get; protected set; }
-		protected virtual int Version { get; set; }
+		public virtual int Version { get; set; }
 		public override bool Equals(object obj)
 		{
 			return Equals(obj as Entity<TId>);
