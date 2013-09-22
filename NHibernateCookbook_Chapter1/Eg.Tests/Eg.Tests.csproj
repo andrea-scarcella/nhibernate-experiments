@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="GenerateFluentNHSchemaFixture.cs" />
     <Compile Include="GenerateManualRelationshipsSchemaFixture.cs" />
+    <Compile Include="GenerateMappingEnumsSchemaFixture.cs" />
     <Compile Include="GenerateSchemaFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />
@@ -75,6 +76,10 @@
     <ProjectReference Include="..\ManualRelationships\ManualRelationships.csproj">
       <Project>{19359690-d90b-4914-b08b-4804a99064c7}</Project>
       <Name>ManualRelationships</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MappingEnums\MappingEnums.csproj">
+      <Project>{4822033a-5f5f-424e-b38f-3fb046bdd06c}</Project>
+      <Name>MappingEnums</Name>
     </ProjectReference>
     <ProjectReference Include="..\NHibernateCookbook_Chapter1\Eg.Core.csproj">
       <Project>{df0833b5-a913-4e8d-9f0a-acaa56249f59}</Project>

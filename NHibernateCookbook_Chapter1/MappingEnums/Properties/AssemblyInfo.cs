@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ManualRelationships")]
+[assembly: AssemblyTitle("MappingEnums")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ManualRelationships")]
+[assembly: AssemblyProduct("MappingEnums")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bc5b4cae-5eeb-43e4-ac0f-d9b30ab3885a")]
+[assembly: Guid("c47a1fca-db93-4fa4-9f92-6ebaf94ce040")]
 
 // Version information for an assembly consists of the following four values:
 //
