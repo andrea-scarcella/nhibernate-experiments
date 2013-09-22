@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eg.Tests", "Eg.Tests\Eg.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eg.FluentMappings", "Eg.FluentMappings\Eg.FluentMappings.csproj", "{AAE31787-1EB1-4F3C-B872-7A3E69E44110}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eg.ConfORMMappings", "Eg.ConfORMMappings\Eg.ConfORMMappings.csproj", "{93AF5AC9-CC5E-4720-9B45-1C5E26B224B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{AAE31787-1EB1-4F3C-B872-7A3E69E44110}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAE31787-1EB1-4F3C-B872-7A3E69E44110}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAE31787-1EB1-4F3C-B872-7A3E69E44110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93AF5AC9-CC5E-4720-9B45-1C5E26B224B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93AF5AC9-CC5E-4720-9B45-1C5E26B224B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93AF5AC9-CC5E-4720-9B45-1C5E26B224B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93AF5AC9-CC5E-4720-9B45-1C5E26B224B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
