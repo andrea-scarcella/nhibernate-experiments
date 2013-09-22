@@ -1,5 +1,7 @@
 ﻿using System;
 using NHibernate.Cfg;
+using NHibernate.Tool.hbm2ddl;
+
 namespace ConfigByAppConfig
 {
 	class Program
@@ -10,8 +12,11 @@ namespace ConfigByAppConfig
 			var nhConfig = new Configuration().Configure();
 			var sessionFactory = nhConfig.BuildSessionFactory();
 			Console.WriteLine("NHibernate Configured!");
-			Console.ReadKey();
 
+			var schemaExport = new SchemaExport(nhConfig);
+			schemaExport.Create(false, true);
+			Console.WriteLine("NHibernate database created!");
+			Console.ReadKey();
 		}
 	}
 }
