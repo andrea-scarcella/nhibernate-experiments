@@ -1,11 +1,10 @@
-﻿using Eg.Core;
+﻿using Eg.FluentMappings;
 using NHibernate.Cfg;
 using NUnit.Framework;
 
 namespace Eg.Tests
 {
-	[TestFixture]
-	public class GenerateSchemaFixture : TestBase
+	public class GenerateFluentNhSchemaFixture : TestBase
 	{
 		[SetUp]
 		public void Setup()
@@ -14,6 +13,5 @@ namespace Eg.Tests
 			Cfg.Configure();
 			Cfg.AddAssembly(typeof(Product).Assembly);
 		}
-
 	}
 }
