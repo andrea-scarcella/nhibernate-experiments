@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eg.Core", "NHibernateCookbo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eg.Tests", "Eg.Tests\Eg.Tests.csproj", "{670A3299-5E05-403F-934B-B50495A5D5B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eg.FluentMappings", "Eg.FluentMappings\Eg.FluentMappings.csproj", "{AAE31787-1EB1-4F3C-B872-7A3E69E44110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eg.FluentTests", "Eg.FluentTests\Eg.FluentTests.csproj", "{A75687F1-2828-4A65-AC03-182ECD11F7A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{670A3299-5E05-403F-934B-B50495A5D5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{670A3299-5E05-403F-934B-B50495A5D5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{670A3299-5E05-403F-934B-B50495A5D5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE31787-1EB1-4F3C-B872-7A3E69E44110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE31787-1EB1-4F3C-B872-7A3E69E44110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE31787-1EB1-4F3C-B872-7A3E69E44110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE31787-1EB1-4F3C-B872-7A3E69E44110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A75687F1-2828-4A65-AC03-182ECD11F7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75687F1-2828-4A65-AC03-182ECD11F7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75687F1-2828-4A65-AC03-182ECD11F7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75687F1-2828-4A65-AC03-182ECD11F7A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
