@@ -14,7 +14,7 @@ namespace ConfigByAppConfig
 			Console.WriteLine("NHibernate Configured!");
 
 			var schemaExport = new SchemaExport(nhConfig);
-			schemaExport.Create(false, true);
+			schemaExport.SetOutputFile(@"db.sql").Execute(false, false, false);
 			Console.WriteLine("NHibernate database created!");
 			Console.ReadKey();
 		}
