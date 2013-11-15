@@ -70,6 +70,7 @@
     <Content Include="Lib\NHibernate.xml" />
     <Content Include="hibernate.cfg.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <EmbeddedResource Include="Mappings\Book.hbm.xml" />
     <EmbeddedResource Include="Mappings\Movie.hbm.xml" />
